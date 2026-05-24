@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SLH × Hilton Honors — Live Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Every Small Luxury Hotel currently bookable with Hilton Honors points. Ranked by aspirational tier + points value. Refreshes monthly from hilton.com.">
+<meta property="og:title" content="SLH × Hilton Honors Tracker">
+<meta property="og:description" content="Every SLH property bookable with Hilton Honors, ranked. Refreshes monthly.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏨%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #F7F5F0;
+    --panel: #FFFFFF;
+    --ink: #1F2937;
+    --ink-soft: #4B5563;
+    --ink-muted: #6B7280;
+    --line: #E7E2D8;
+    --line-soft: #EFEAE0;
+    --accent: #B85C38;
+    --accent-soft: #F6E7DC;
+    --sage: #6B7F66;
+    --sage-soft: #E5EBE0;
+    --sky: #4A6E85;
+    --sky-soft: #DDE6EC;
+    --gold: #B08742;
+    --gold-soft: #F2E9D8;
+    --shadow: 0 1px 2px rgba(31,41,55,.04), 0 8px 24px rgba(31,41,55,.06);
+    --radius: 14px;
+    --radius-sm: 8px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  body { font-size: 15px; line-height: 1.55; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 28px 24px 60px; }
+
+  .hero { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; padding-bottom: 22px; border-bottom: 1px solid var(--line); margin-bottom: 22px; }
+  .hero h1 { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 34px; line-height: 1.1; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .hero .sub { color: var(--ink-muted); font-size: 14px; }
+  .hero .sub a { color: var(--ink-muted); border-bottom: 1px dotted var(--ink-muted); }
+  .hero .meta { text-align: right; font-size: 12.5px; color: var(--ink-muted); }
+  .hero .meta .stamp { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); }
+  .hero .meta .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--sage); }
+
+  .stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 22px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+  .stat .label { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-muted); margin-bottom: 6px; }
+  .stat .value { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 26px; line-height: 1; color: var(--ink); }
+  .stat .delta { font-size: 12px; color: var(--ink-soft); margin-top: 4px; }
+
+  .controls { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 18px; display: grid; grid-template-columns: 1fr auto auto auto; gap: 12px; align-items: center; }
+  .search { display: flex; align-items: center; gap: 8px; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 8px 12px; }
+  .search input { flex: 1; border: 0; outline: 0; background: transparent; font: inherit; color: var(--ink); }
+  .search svg { width: 16px; height: 16px; color: var(--ink-muted); flex-shrink: 0; }
+  .pill-group { display: flex; gap: 4px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); padding: 3px; }
+  .pill { font: inherit; font-size: 13px; padding: 5px 11px; border: 0; background: transparent; color: var(--ink-soft); border-radius: 6px; cursor: pointer; white-space: nowrap; }
+  .pill.active { background: var(--panel); color: var(--ink); box-shadow: 0 1px 2px rgba(31,41,55,.06); font-weight: 500; }
+  .pill:hover:not(.active) { color: var(--ink); }
+  .sort { font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--bg); border-radius: var(--radius-sm); padding: 7px 10px; color: var(--ink); cursor: pointer; }
+
+  .filterbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 999px; font-size: 12.5px; border: 1px solid var(--line); background: var(--panel); color: var(--ink-soft); cursor: pointer; font: inherit; }
+  .chip:hover { color: var(--ink); }
+  .chip.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 10px; transition: box-shadow .15s, border-color .15s, transform .15s; position: relative; }
+  .card:hover { box-shadow: var(--shadow); border-color: #DDD5C6; }
+  .card.favorite { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent-soft) inset; }
+  .card.seen { opacity: 0.6; }
+  .card.seen:hover { opacity: 1; }
+
+  .card .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .card .name { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 17px; line-height: 1.25; letter-spacing: -0.005em; color: var(--ink); }
+  .card .loc { font-size: 12.5px; color: var(--ink-muted); margin-top: 3px; display: flex; align-items: center; gap: 5px; }
+  .card .flag { font-size: 14px; line-height: 1; }
+  .card .actions { display: flex; gap: 6px; opacity: 0.5; transition: opacity .15s; }
+  .card:hover .actions, .card.favorite .actions { opacity: 1; }
+  .card .iconbtn { width: 24px; height: 24px; padding: 0; border: 1px solid var(--line); background: var(--panel); border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; color: var(--ink-muted); }
+  .card .iconbtn:hover { color: var(--ink); border-color: var(--ink-muted); }
+  .card .iconbtn.on { color: var(--accent); border-color: var(--accent); }
+  .card .iconbtn.on-eye { color: var(--ink); border-color: var(--ink); }
+
+  .badges { display: flex; flex-wrap: wrap; gap: 4px; }
+  .badge { font-size: 11px; padding: 2px 8px; border-radius: 999px; font-weight: 500; letter-spacing: 0.01em; }
+  .badge.tpg { background: var(--gold-soft); color: #7A5C20; }
+  .badge.sweet { background: var(--sage-soft); color: #3F5A37; }
+  .badge.nobu { background: #1F2937; color: var(--bg); }
+  .badge.new { background: var(--accent-soft); color: #8E3F1F; }
+  .badge.iconic { background: var(--sky-soft); color: #2C4A60; }
+
+  .card .meta-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 12px; color: var(--ink-muted); margin-top: auto; padding-top: 8px; border-top: 1px solid var(--line-soft); }
+  .card .points { color: var(--ink-soft); font-variant-numeric: tabular-nums; font-weight: 500; }
+  .card .booklink { color: var(--accent); font-size: 12px; font-weight: 500; }
+  .card .booklink:hover { text-decoration: underline; }
+
+  .empty { background: var(--panel); border: 1px dashed var(--line); border-radius: var(--radius); padding: 36px 20px; text-align: center; color: var(--ink-muted); }
+  .empty .ico { font-size: 22px; margin-bottom: 8px; }
+
+  .loading { text-align: center; padding: 60px 20px; color: var(--ink-muted); font-size: 14px; }
+
+  .diff { background: var(--accent-soft); border: 1px solid #E8C9B5; border-radius: var(--radius); padding: 14px 18px; margin-bottom: 18px; display: none; }
+  .diff.show { display: block; }
+  .diff h3 { margin: 0 0 6px; font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 16px; color: #8E3F1F; }
+  .diff p { margin: 0; font-size: 13.5px; color: #6B3019; }
+  .diff .close { float: right; background: transparent; border: 0; color: #8E3F1F; cursor: pointer; padding: 0; font: inherit; font-size: 18px; line-height: 1; }
+
+  .footer { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12.5px; color: var(--ink-muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .footer a { color: var(--ink-muted); border-bottom: 1px dotted var(--ink-muted); }
+  .footer .sources { display: flex; flex-direction: column; gap: 3px; }
+
+  .refresh-hint { background: var(--sage-soft); border: 1px solid #D2DDC9; padding: 12px 16px; border-radius: var(--radius); margin-top: 22px; font-size: 13px; color: #3F5A37; }
+  .refresh-hint b { font-weight: 600; }
+
+  @media (max-width: 760px) {
+    .wrap { padding: 20px 16px 40px; }
+    .hero { flex-direction: column; align-items: flex-start; }
+    .hero h1 { font-size: 28px; }
+    .hero .meta { text-align: left; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stat .value { font-size: 22px; }
+    .controls { grid-template-columns: 1fr; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div>
+      <h1>SLH × Hilton Honors</h1>
+      <div class="sub">Every Small Luxury Hotel currently bookable with Hilton Honors points. Source of truth: <a href="https://www.hilton.com/en/brands/small-luxury-hotels-slh/participating-hotels/" target="_blank" rel="noopener">hilton.com</a></div>
+    </div>
+    <div class="meta">
+      <span class="stamp"><span class="dot"></span><span id="stamp">Loading…</span></span>
+    </div>
+  </header>
+
+  <div id="diff" class="diff">
+    <button class="close" onclick="document.getElementById('diff').classList.remove('show')">×</button>
+    <h3 id="diff-title">Changes since your last visit</h3>
+    <p id="diff-body"></p>
+  </div>
+
+  <section class="stats">
+    <div class="stat"><div class="label">Properties</div><div class="value" id="s-total">—</div><div class="delta">on Hilton Honors</div></div>
+    <div class="stat"><div class="label">Countries</div><div class="value" id="s-countries">—</div><div class="delta">across 5 continents</div></div>
+    <div class="stat"><div class="label">TPG Top Picks</div><div class="value" id="s-tpg">—</div><div class="delta">aspirational tier</div></div>
+    <div class="stat"><div class="label">Points sweet spots</div><div class="value" id="s-sweet">—</div><div class="delta">≤ 40K points/night</div></div>
+    <div class="stat"><div class="label">Your favorites</div><div class="value" id="s-fav">0</div><div class="delta">saved on this device</div></div>
+  </section>
+
+  <div class="controls">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="q" type="search" placeholder="Search hotel or country (e.g. Maldives, Nobu, Bali)…">
+    </div>
+    <div class="pill-group" id="region-filter">
+      <button class="pill active" data-region="all">All</button>
+      <button class="pill" data-region="Europe">Europe</button>
+      <button class="pill" data-region="Asia">Asia</button>
+      <button class="pill" data-region="Americas">Americas</button>
+      <button class="pill" data-region="Africa">Africa</button>
+      <button class="pill" data-region="Oceania">Oceania</button>
+    </div>
+    <select class="sort" id="sort">
+      <option value="tier">Sort: Best first</option>
+      <option value="name">Sort: A → Z</option>
+      <option value="country">Sort: By country</option>
+      <option value="points">Sort: Points (cheapest)</option>
+    </select>
+  </div>
+
+  <div class="filterbar">
+    <button class="chip" data-tag="tpg">⭐ TPG Top Pick</button>
+    <button class="chip" data-tag="sweet">🎯 Points sweet spot</button>
+    <button class="chip" data-tag="iconic">🌅 Iconic destination</button>
+    <button class="chip" data-tag="nobu">Nobu</button>
+    <button class="chip" data-tag="new">Recently added</button>
+    <button class="chip" data-tag="favorite">♥ Favorites only</button>
+    <span style="flex:1"></span>
+    <button class="chip" id="reset" style="border-style:dashed">Reset filters</button>
+  </div>
+
+  <main id="grid" class="grid"></main>
+  <div id="loading" class="loading">Loading properties…</div>
+  <div id="empty" class="empty" style="display:none">
+    <div class="ico">∅</div>
+    No properties match these filters. Try clearing some.
+  </div>
+
+  <div class="refresh-hint">
+    <b>Keeping this fresh.</b> SLH properties join and leave the Hilton program monthly without much fanfare. A scheduled task re-scrapes <code style="background:rgba(63,90,55,.1);padding:1px 5px;border-radius:3px;font-size:12px">hilton.com/participating-hotels</code> on the 1st of each month and updates the data behind this page. Favorites are stored per-device.
+  </div>
+
+  <footer class="footer">
+    <div class="sources">
+      <span>Sources:</span>
+      <a href="https://www.hilton.com/en/brands/small-luxury-hotels-slh/participating-hotels/" target="_blank" rel="noopener">Hilton.com — Participating SLH Hotels (source of truth)</a>
+      <a href="https://thepointsguy.com/hotel/best-small-luxury-hotels-hilton-honors/" target="_blank" rel="noopener">The Points Guy — Coolest SLH Hotels</a>
+      <a href="https://frequentmiler.com/cheap-luxury-fhr-properties-for-40k-or-fewer-hilton-points-per-night/" target="_blank" rel="noopener">Frequent Miler — Cheap SLH luxury (≤40K points)</a>
+      <a href="https://loyaltylobby.com/2026/05/12/hilton-slh-partnership-additions-and-removals-may-2026/" target="_blank" rel="noopener">LoyaltyLobby — May 2026 add/remove log</a>
+    </div>
+    <div style="text-align:right">
+      Built for the TamLin household · <a href="javascript:resetEverything()">reset local data</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+let DATA = null;          // populated by fetch('./hotels.json')
+let HOTELS_BY_KEY = {};
+
+const state = { q: "", region: "all", tags: new Set(), sort: "tier" };
+const $ = id => document.getElementById(id);
+
+function score(h, ICONIC_COUNTRIES) {
+  const t = new Set(h.tags || []);
+  let s = 0;
+  if (t.has("tpg")) s += 100;
+  if (t.has("nobu")) s += 40;
+  if (t.has("sweet")) s += 50;
+  if (t.has("iconic")) s += 12;
+  if (t.has("new")) s += 8;
+  if (ICONIC_COUNTRIES.has(h.country)) s += 5;
+  if (h.points) s += 2;
+  return s;
+}
+
+const getFavs = () => { try { return JSON.parse(localStorage.getItem("slh-favs") || "[]"); } catch { return []; } };
+const setFavs = a => localStorage.setItem("slh-favs", JSON.stringify(a));
+const getSeen = () => { try { return JSON.parse(localStorage.getItem("slh-seen") || "[]"); } catch { return []; } };
+const setSeen = a => localStorage.setItem("slh-seen", JSON.stringify(a));
+const key = h => h.country + "::" + h.name;
+const isFav = h => getFavs().includes(key(h));
+const isSeen = h => getSeen().includes(key(h));
+
+function toggleFav(h) { let f = getFavs(); const k = key(h); f = f.includes(k) ? f.filter(x=>x!==k) : [...f, k]; setFavs(f); render(); }
+function toggleSeen(h) { let s = getSeen(); const k = key(h); s = s.includes(k) ? s.filter(x=>x!==k) : [...s, k]; setSeen(s); render(); }
+
+function filtered() {
+  const q = state.q.toLowerCase().trim();
+  return DATA.hotels.filter(h => {
+    if (state.region !== "all" && (DATA.country_meta[h.country]?.r) !== state.region) return false;
+    for (const t of state.tags) {
+      if (t === "favorite") { if (!isFav(h)) return false; }
+      else if (!(h.tags || []).includes(t)) return false;
+    }
+    if (q) {
+      const hay = (h.name + " " + h.country + " " + (h.city||"")).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function sortHotels(list) {
+  const ICONIC_COUNTRIES = new Set(DATA.iconic_countries);
+  const copy = list.slice();
+  if (state.sort === "name") copy.sort((a,b) => a.name.localeCompare(b.name));
+  else if (state.sort === "country") copy.sort((a,b) => a.country.localeCompare(b.country) || a.name.localeCompare(b.name));
+  else if (state.sort === "points") copy.sort((a,b) => {
+    const ap = a.points ?? 999999, bp = b.points ?? 999999;
+    return ap - bp || a.name.localeCompare(b.name);
+  });
+  else copy.sort((a,b) => score(b,ICONIC_COUNTRIES) - score(a,ICONIC_COUNTRIES) || a.country.localeCompare(b.country) || a.name.localeCompare(b.name));
+  return copy;
+}
+
+function bookUrl(h) {
+  if (h.url) return h.url;
+  const slug = (h.country === "USA") ? "usa"
+    : h.country.toLowerCase().replace(/'/g,"").replace(/&/g,"and").replace(/\s+/g,"-");
+  return `https://www.hilton.com/en/locations/${slug}/small-luxury-hotels-slh/`;
+}
+
+function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+
+function cardHtml(h) {
+  const meta = DATA.country_meta[h.country] || {r:"—",f:"📍"};
+  const tags = h.tags || [];
+  const badges = [];
+  if (tags.includes("tpg"))     badges.push('<span class="badge tpg">⭐ TPG Pick</span>');
+  if (tags.includes("sweet"))   badges.push('<span class="badge sweet">🎯 ≤40K pts</span>');
+  if (tags.includes("nobu"))    badges.push('<span class="badge nobu">Nobu</span>');
+  if (tags.includes("new"))     badges.push('<span class="badge new">Recently added</span>');
+  if (tags.includes("iconic") && !tags.includes("tpg")) badges.push('<span class="badge iconic">🌅 Iconic</span>');
+
+  const fav = isFav(h), seen = isSeen(h);
+  const locText = h.city ? `${h.city}, ${h.country}` : h.country;
+  const pts = h.points ? `${(h.points/1000).toFixed(0)}K pts` : "—";
+  const k = key(h);
+
+  return `
+  <article class="card ${fav?'favorite':''} ${seen?'seen':''}" data-k="${escapeHtml(k)}">
+    <div class="top">
+      <div>
+        <div class="name">${escapeHtml(h.name)}</div>
+        <div class="loc"><span class="flag">${meta.f}</span> ${escapeHtml(locText)}</div>
+      </div>
+      <div class="actions">
+        <button class="iconbtn ${fav?'on':''}" title="Favorite" data-action="fav">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="${fav?'currentColor':'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
+        <button class="iconbtn ${seen?'on-eye':''}" title="Mark as reviewed" data-action="seen">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+      </div>
+    </div>
+    ${badges.length ? `<div class="badges">${badges.join("")}</div>` : ""}
+    <div class="meta-row">
+      <span class="points">${pts}</span>
+      <a class="booklink" href="${bookUrl(h)}" target="_blank" rel="noopener">View on Hilton →</a>
+    </div>
+  </article>`;
+}
+
+function render() {
+  if (!DATA) return;
+  const list = sortHotels(filtered());
+  const grid = $("grid");
+  if (list.length === 0) {
+    grid.innerHTML = "";
+    $("empty").style.display = "block";
+  } else {
+    $("empty").style.display = "none";
+    grid.innerHTML = list.map(cardHtml).join("");
+  }
+  $("s-fav").textContent = getFavs().length;
+}
+
+function initStats() {
+  $("s-total").textContent = DATA.total;
+  $("s-countries").textContent = DATA.countries;
+  $("s-tpg").textContent = DATA.hotels.filter(h => (h.tags||[]).includes("tpg")).length;
+  $("s-sweet").textContent = DATA.hotels.filter(h => (h.tags||[]).includes("sweet")).length;
+  $("stamp").textContent = `Snapshot · ${new Date(DATA.snapshot_date).toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"})}`;
+}
+
+function initDiff() {
+  const lastSnapshot = JSON.parse(localStorage.getItem("slh-last-list") || "null");
+  const currentList = DATA.hotels.map(key);
+  if (lastSnapshot && Array.isArray(lastSnapshot)) {
+    const lastSet = new Set(lastSnapshot);
+    const curSet = new Set(currentList);
+    const added = currentList.filter(k => !lastSet.has(k));
+    const removed = lastSnapshot.filter(k => !curSet.has(k));
+    if (added.length || removed.length) {
+      const parts = [];
+      if (added.length) parts.push(`<b>+${added.length} added</b>: ${added.slice(0,3).map(k => k.split("::")[1]).join(", ")}${added.length>3?", …":""}`);
+      if (removed.length) parts.push(`<b>−${removed.length} removed</b>: ${removed.slice(0,3).map(k => k.split("::")[1]).join(", ")}${removed.length>3?", …":""}`);
+      $("diff-body").innerHTML = parts.join(" · ");
+      $("diff").classList.add("show");
+    }
+  }
+  localStorage.setItem("slh-last-list", JSON.stringify(currentList));
+  localStorage.setItem("slh-last-date", DATA.snapshot_date);
+}
+
+function resetEverything() {
+  if (!confirm("Clear all favorites, seen marks, and snapshot history on this device?")) return;
+  localStorage.removeItem("slh-favs");
+  localStorage.removeItem("slh-seen");
+  localStorage.removeItem("slh-last-list");
+  localStorage.removeItem("slh-last-date");
+  render();
+  $("diff").classList.remove("show");
+}
+window.resetEverything = resetEverything;
+
+// ─── EVENTS ───────────────────────────────────────────────
+$("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+$("region-filter").addEventListener("click", e => {
+  const btn = e.target.closest(".pill"); if (!btn) return;
+  document.querySelectorAll("#region-filter .pill").forEach(p => p.classList.remove("active"));
+  btn.classList.add("active");
+  state.region = btn.dataset.region;
+  render();
+});
+$("sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
+document.querySelectorAll(".chip[data-tag]").forEach(c => {
+  c.addEventListener("click", () => {
+    const t = c.dataset.tag;
+    if (state.tags.has(t)) { state.tags.delete(t); c.classList.remove("active"); }
+    else { state.tags.add(t); c.classList.add("active"); }
+    render();
+  });
+});
+$("reset").addEventListener("click", () => {
+  state.q = ""; $("q").value = "";
+  state.region = "all";
+  state.tags.clear();
+  state.sort = "tier";
+  $("sort").value = "tier";
+  document.querySelectorAll(".chip[data-tag]").forEach(c => c.classList.remove("active"));
+  document.querySelectorAll("#region-filter .pill").forEach(p => p.classList.remove("active"));
+  document.querySelector('#region-filter .pill[data-region="all"]').classList.add("active");
+  render();
+});
+
+// event delegation for card buttons (works with re-rendered cards)
+$("grid").addEventListener("click", e => {
+  const btn = e.target.closest(".iconbtn"); if (!btn) return;
+  e.preventDefault();
+  const card = btn.closest(".card");
+  const h = HOTELS_BY_KEY[card.dataset.k];
+  if (!h) return;
+  if (btn.dataset.action === "fav") toggleFav(h);
+  else if (btn.dataset.action === "seen") toggleSeen(h);
+});
+
+// ─── BOOT ─────────────────────────────────────────────────
+fetch("./hotels.json?v=" + Date.now())
+  .then(r => r.json())
+  .then(d => {
+    DATA = d;
+    DATA.hotels.forEach(h => HOTELS_BY_KEY[key(h)] = h);
+    $("loading").style.display = "none";
+    initStats();
+    initDiff();
+    render();
+  })
+  .catch(err => {
+    $("loading").innerHTML = "Couldn't load hotel data. Try refreshing.<br><small style='color:#999'>" + err + "</small>";
+  });
+</script>
+</body>
+</html>

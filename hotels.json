@@ -1,0 +1,3077 @@
+{
+  "snapshot_date": "2026-05-23",
+  "source": "https://www.hilton.com/en/brands/small-luxury-hotels-slh/participating-hotels/",
+  "total": 501,
+  "countries": 83,
+  "country_meta": {
+    "Andorra": {
+      "r": "Europe",
+      "f": "🇦🇩"
+    },
+    "Anguilla": {
+      "r": "Americas",
+      "f": "🇦🇮"
+    },
+    "Antigua": {
+      "r": "Americas",
+      "f": "🇦🇬"
+    },
+    "Argentina": {
+      "r": "Americas",
+      "f": "🇦🇷"
+    },
+    "Armenia": {
+      "r": "Asia",
+      "f": "🇦🇲"
+    },
+    "Australia": {
+      "r": "Oceania",
+      "f": "🇦🇺"
+    },
+    "Austria": {
+      "r": "Europe",
+      "f": "🇦🇹"
+    },
+    "Bahamas": {
+      "r": "Americas",
+      "f": "🇧🇸"
+    },
+    "Belgium": {
+      "r": "Europe",
+      "f": "🇧🇪"
+    },
+    "Belize": {
+      "r": "Americas",
+      "f": "🇧🇿"
+    },
+    "Bhutan": {
+      "r": "Asia",
+      "f": "🇧🇹"
+    },
+    "Brazil": {
+      "r": "Americas",
+      "f": "🇧🇷"
+    },
+    "Cambodia": {
+      "r": "Asia",
+      "f": "🇰🇭"
+    },
+    "Canada": {
+      "r": "Americas",
+      "f": "🇨🇦"
+    },
+    "Chile": {
+      "r": "Americas",
+      "f": "🇨🇱"
+    },
+    "China": {
+      "r": "Asia",
+      "f": "🇨🇳"
+    },
+    "Colombia": {
+      "r": "Americas",
+      "f": "🇨🇴"
+    },
+    "Costa Rica": {
+      "r": "Americas",
+      "f": "🇨🇷"
+    },
+    "Croatia": {
+      "r": "Europe",
+      "f": "🇭🇷"
+    },
+    "Cyprus": {
+      "r": "Europe",
+      "f": "🇨🇾"
+    },
+    "Czech Republic": {
+      "r": "Europe",
+      "f": "🇨🇿"
+    },
+    "Denmark": {
+      "r": "Europe",
+      "f": "🇩🇰"
+    },
+    "Dominican Republic": {
+      "r": "Americas",
+      "f": "🇩🇴"
+    },
+    "Estonia": {
+      "r": "Europe",
+      "f": "🇪🇪"
+    },
+    "Fiji": {
+      "r": "Oceania",
+      "f": "🇫🇯"
+    },
+    "France": {
+      "r": "Europe",
+      "f": "🇫🇷"
+    },
+    "Germany": {
+      "r": "Europe",
+      "f": "🇩🇪"
+    },
+    "Greece": {
+      "r": "Europe",
+      "f": "🇬🇷"
+    },
+    "Guatemala": {
+      "r": "Americas",
+      "f": "🇬🇹"
+    },
+    "Hong Kong": {
+      "r": "Asia",
+      "f": "🇭🇰"
+    },
+    "Hungary": {
+      "r": "Europe",
+      "f": "🇭🇺"
+    },
+    "Iceland": {
+      "r": "Europe",
+      "f": "🇮🇸"
+    },
+    "India": {
+      "r": "Asia",
+      "f": "🇮🇳"
+    },
+    "Indonesia": {
+      "r": "Asia",
+      "f": "🇮🇩"
+    },
+    "Ireland": {
+      "r": "Europe",
+      "f": "🇮🇪"
+    },
+    "Israel": {
+      "r": "Asia",
+      "f": "🇮🇱"
+    },
+    "Italy": {
+      "r": "Europe",
+      "f": "🇮🇹"
+    },
+    "Jamaica": {
+      "r": "Americas",
+      "f": "🇯🇲"
+    },
+    "Japan": {
+      "r": "Asia",
+      "f": "🇯🇵"
+    },
+    "Jersey": {
+      "r": "Europe",
+      "f": "🇯🇪"
+    },
+    "Kenya": {
+      "r": "Africa",
+      "f": "🇰🇪"
+    },
+    "Laos": {
+      "r": "Asia",
+      "f": "🇱🇦"
+    },
+    "Latvia": {
+      "r": "Europe",
+      "f": "🇱🇻"
+    },
+    "Lebanon": {
+      "r": "Asia",
+      "f": "🇱🇧"
+    },
+    "Lithuania": {
+      "r": "Europe",
+      "f": "🇱🇹"
+    },
+    "Malaysia": {
+      "r": "Asia",
+      "f": "🇲🇾"
+    },
+    "Maldives": {
+      "r": "Asia",
+      "f": "🇲🇻"
+    },
+    "Malta": {
+      "r": "Europe",
+      "f": "🇲🇹"
+    },
+    "Mauritius": {
+      "r": "Africa",
+      "f": "🇲🇺"
+    },
+    "Mexico": {
+      "r": "Americas",
+      "f": "🇲🇽"
+    },
+    "Morocco": {
+      "r": "Africa",
+      "f": "🇲🇦"
+    },
+    "Myanmar": {
+      "r": "Asia",
+      "f": "🇲🇲"
+    },
+    "Nepal": {
+      "r": "Asia",
+      "f": "🇳🇵"
+    },
+    "Netherlands": {
+      "r": "Europe",
+      "f": "🇳🇱"
+    },
+    "New Zealand": {
+      "r": "Oceania",
+      "f": "🇳🇿"
+    },
+    "Nicaragua": {
+      "r": "Americas",
+      "f": "🇳🇮"
+    },
+    "Norway": {
+      "r": "Europe",
+      "f": "🇳🇴"
+    },
+    "Panama": {
+      "r": "Americas",
+      "f": "🇵🇦"
+    },
+    "Poland": {
+      "r": "Europe",
+      "f": "🇵🇱"
+    },
+    "Portugal": {
+      "r": "Europe",
+      "f": "🇵🇹"
+    },
+    "Puerto Rico": {
+      "r": "Americas",
+      "f": "🇵🇷"
+    },
+    "Romania": {
+      "r": "Europe",
+      "f": "🇷🇴"
+    },
+    "Saint Kitts and Nevis": {
+      "r": "Americas",
+      "f": "🇰🇳"
+    },
+    "Saint Vincent and Grenadines": {
+      "r": "Americas",
+      "f": "🇻🇨"
+    },
+    "Sao Tome and Principe": {
+      "r": "Africa",
+      "f": "🇸🇹"
+    },
+    "Saudi Arabia": {
+      "r": "Asia",
+      "f": "🇸🇦"
+    },
+    "Serbia": {
+      "r": "Europe",
+      "f": "🇷🇸"
+    },
+    "Seychelles": {
+      "r": "Africa",
+      "f": "🇸🇨"
+    },
+    "Slovenia": {
+      "r": "Europe",
+      "f": "🇸🇮"
+    },
+    "South Africa": {
+      "r": "Africa",
+      "f": "🇿🇦"
+    },
+    "South Korea": {
+      "r": "Asia",
+      "f": "🇰🇷"
+    },
+    "Spain": {
+      "r": "Europe",
+      "f": "🇪🇸"
+    },
+    "Sri Lanka": {
+      "r": "Asia",
+      "f": "🇱🇰"
+    },
+    "Sweden": {
+      "r": "Europe",
+      "f": "🇸🇪"
+    },
+    "Switzerland": {
+      "r": "Europe",
+      "f": "🇨🇭"
+    },
+    "Taiwan": {
+      "r": "Asia",
+      "f": "🇹🇼"
+    },
+    "Thailand": {
+      "r": "Asia",
+      "f": "🇹🇭"
+    },
+    "Tunisia": {
+      "r": "Africa",
+      "f": "🇹🇳"
+    },
+    "Turkiye": {
+      "r": "Europe",
+      "f": "🇹🇷"
+    },
+    "Turks and Caicos": {
+      "r": "Americas",
+      "f": "🇹🇨"
+    },
+    "United Kingdom": {
+      "r": "Europe",
+      "f": "🇬🇧"
+    },
+    "USA": {
+      "r": "Americas",
+      "f": "🇺🇸"
+    },
+    "Vietnam": {
+      "r": "Asia",
+      "f": "🇻🇳"
+    }
+  },
+  "iconic_countries": [
+    "Maldives",
+    "Fiji",
+    "Bhutan",
+    "Greece",
+    "Italy",
+    "Japan",
+    "Iceland",
+    "Morocco",
+    "Indonesia",
+    "Sri Lanka",
+    "Mauritius",
+    "Seychelles",
+    "Turks and Caicos",
+    "Antigua",
+    "Saint Vincent and Grenadines",
+    "Tanzania",
+    "Kenya",
+    "Nicaragua"
+  ],
+  "hotels": [
+    {
+      "name": "The Blackpine Hotel",
+      "country": "Andorra"
+    },
+    {
+      "name": "Malliouhana Resort",
+      "country": "Anguilla"
+    },
+    {
+      "name": "Hermitage Bay",
+      "country": "Antigua",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/anuhblx-hermitage-bay/",
+      "points": 180000
+    },
+    {
+      "name": "Tamarind Hills Resort and Villas",
+      "country": "Antigua",
+      "tags": [
+        "new",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/anuthlx-tamarind-hills-resort-and-villas/",
+      "points": 120000
+    },
+    {
+      "name": "The Inn at English Harbour",
+      "country": "Antigua",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Correntoso Lake and River Hotel",
+      "country": "Argentina"
+    },
+    {
+      "name": "Grand Hotel Yerevan",
+      "country": "Armenia"
+    },
+    {
+      "name": "Chalets at Blackheath",
+      "country": "Australia"
+    },
+    {
+      "name": "Islington Hotel",
+      "country": "Australia"
+    },
+    {
+      "name": "Le Mas Barossa",
+      "country": "Australia"
+    },
+    {
+      "name": "Lon Retreat & Spa",
+      "country": "Australia"
+    },
+    {
+      "name": "Smiths Beach Resort",
+      "country": "Australia"
+    },
+    {
+      "name": "Altstadt Vienna",
+      "country": "Austria"
+    },
+    {
+      "name": "DasPosthotel",
+      "country": "Austria"
+    },
+    {
+      "name": "eriro",
+      "country": "Austria",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/innerlx-eriro/",
+      "points": 150000
+    },
+    {
+      "name": "Grossarler Hof",
+      "country": "Austria"
+    },
+    {
+      "name": "Hotel Das Tyrol",
+      "country": "Austria"
+    },
+    {
+      "name": "Hotel Goldgasse",
+      "country": "Austria"
+    },
+    {
+      "name": "Hotel Schloss Seefels",
+      "country": "Austria"
+    },
+    {
+      "name": "Kristiania Lech",
+      "country": "Austria"
+    },
+    {
+      "name": "Severin's – The Alpine Retreat",
+      "country": "Austria"
+    },
+    {
+      "name": "Goldwynn Resort & Residences",
+      "country": "Bahamas"
+    },
+    {
+      "name": "De Witte Lelie",
+      "country": "Belgium"
+    },
+    {
+      "name": "Juliana Hotel Brussels",
+      "country": "Belgium"
+    },
+    {
+      "name": "La Butte aux Bois",
+      "country": "Belgium"
+    },
+    {
+      "name": "Gaia Riverlodge",
+      "country": "Belize"
+    },
+    {
+      "name": "Itz'ana Resort & Residences",
+      "country": "Belize"
+    },
+    {
+      "name": "Ka'ana Resort",
+      "country": "Belize"
+    },
+    {
+      "name": "Matachica Resort & Spa",
+      "country": "Belize"
+    },
+    {
+      "name": "Bhutan Spirit Sanctuary",
+      "country": "Bhutan",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Gangtey Lodge",
+      "country": "Bhutan",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Barracuda Hotel & Villas",
+      "country": "Brazil"
+    },
+    {
+      "name": "Emiliano Rio",
+      "country": "Brazil"
+    },
+    {
+      "name": "Emiliano Sao Paulo",
+      "country": "Brazil"
+    },
+    {
+      "name": "Kenoa – Exclusive Beach Spa & Resort",
+      "country": "Brazil"
+    },
+    {
+      "name": "Angkor Village Hotel",
+      "country": "Cambodia",
+      "city": "Siem Reap",
+      "tags": [
+        "sweet",
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/repahlx-angkor-village-hotel/",
+      "points": 30000
+    },
+    {
+      "name": "Monsieur Jean, Hôtel Particulier",
+      "country": "Canada"
+    },
+    {
+      "name": "Debaines Hotel Santiago",
+      "country": "Chile"
+    },
+    {
+      "name": "Elite Spring Villas",
+      "country": "China"
+    },
+    {
+      "name": "Hangzhou Muh Shoou Xixi Hotel",
+      "country": "China"
+    },
+    {
+      "name": "Honor Resort Yun Shu Dali",
+      "country": "China"
+    },
+    {
+      "name": "Hotel Eclat Beijing",
+      "country": "China"
+    },
+    {
+      "name": "HUANG YAN 36 Hotel",
+      "country": "China"
+    },
+    {
+      "name": "INTO Hotel Chibi",
+      "country": "China"
+    },
+    {
+      "name": "Jangala Dunhuang",
+      "country": "China"
+    },
+    {
+      "name": "Kaipuu Belfry",
+      "country": "China"
+    },
+    {
+      "name": "Kaipuu on the Reef",
+      "country": "China"
+    },
+    {
+      "name": "Lakeview Hotel Yulongwan Kunming",
+      "country": "China",
+      "city": "Kunming",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/kmgyllx-lakeview-hotel-yulongwan-kunming/",
+      "points": 40000
+    },
+    {
+      "name": "LN Hotel Five",
+      "country": "China",
+      "city": "Guangzhou",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/canlnlx-ln-hotel-five/",
+      "points": 25000
+    },
+    {
+      "name": "Pokkei Hotel Shaoxing",
+      "country": "China"
+    },
+    {
+      "name": "Qiushui Villa",
+      "country": "China"
+    },
+    {
+      "name": "The Hanyu Garden Reserve Suzhou",
+      "country": "China"
+    },
+    {
+      "name": "The Moon Mansion",
+      "country": "China",
+      "city": "Tengchong",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/tczmmlx-the-moon-mansion/",
+      "points": 89000
+    },
+    {
+      "name": "The New Jingli Hotel",
+      "country": "China",
+      "city": "Nanjing",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/nkgnjlx-the-new-jingli-hotel/",
+      "points": 30000
+    },
+    {
+      "name": "The Sukhothai Shanghai",
+      "country": "China"
+    },
+    {
+      "name": "Vallie Hotel",
+      "country": "China"
+    },
+    {
+      "name": "Yanbai Villa",
+      "country": "China"
+    },
+    {
+      "name": "Yangshou Jora Hotel",
+      "country": "China"
+    },
+    {
+      "name": "YiuTeung Mansion",
+      "country": "China",
+      "city": "Chengdu",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/ctuytlx-yiuteung-mansion/",
+      "points": 40000
+    },
+    {
+      "name": "Younch Hotel Xi'an",
+      "country": "China"
+    },
+    {
+      "name": "Movich Hotel Cartagena de Indias",
+      "country": "Colombia"
+    },
+    {
+      "name": "Alta Las Palomas",
+      "country": "Costa Rica"
+    },
+    {
+      "name": "Hotel Three Sixty",
+      "country": "Costa Rica"
+    },
+    {
+      "name": "Hotel Nantipa",
+      "country": "Costa Rica"
+    },
+    {
+      "name": "Los Altos Resort",
+      "country": "Costa Rica"
+    },
+    {
+      "name": "Rio Perdido",
+      "country": "Costa Rica"
+    },
+    {
+      "name": "Senda Monteverde Hotel",
+      "country": "Costa Rica"
+    },
+    {
+      "name": "Tabacon Thermal Resort and Spa",
+      "country": "Costa Rica"
+    },
+    {
+      "name": "The Retreat Costa Rica",
+      "country": "Costa Rica"
+    },
+    {
+      "name": "Boutique & Design Hotel Navis",
+      "country": "Croatia"
+    },
+    {
+      "name": "Boutique Hotel Alhambra",
+      "country": "Croatia"
+    },
+    {
+      "name": "D-Resort Sibenik",
+      "country": "Croatia"
+    },
+    {
+      "name": "Hotel Vestibul Palace",
+      "country": "Croatia"
+    },
+    {
+      "name": "Palazzo Rainis Hotel & Spa",
+      "country": "Croatia"
+    },
+    {
+      "name": "San Canzian Hotel & Residences",
+      "country": "Croatia"
+    },
+    {
+      "name": "The Agora Hotel",
+      "country": "Cyprus",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/lcaahlx-the-agora-hotel/"
+    },
+    {
+      "name": "Casale Panayiotis",
+      "country": "Cyprus"
+    },
+    {
+      "name": "Columbia Beach Resort",
+      "country": "Cyprus"
+    },
+    {
+      "name": "BoHo Prague Hotel",
+      "country": "Czech Republic"
+    },
+    {
+      "name": "Nimb Hotel",
+      "country": "Denmark",
+      "city": "Copenhagen",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/cphnilx-nimb-hotel/",
+      "points": 130000
+    },
+    {
+      "name": "Park Lane Copenhagen",
+      "country": "Denmark"
+    },
+    {
+      "name": "Casa Colonial Beach and Spa",
+      "country": "Dominican Republic"
+    },
+    {
+      "name": "Sublime Samana Hotel & Residences",
+      "country": "Dominican Republic"
+    },
+    {
+      "name": "Padaste Manor",
+      "country": "Estonia"
+    },
+    {
+      "name": "Schlossle Hotel",
+      "country": "Estonia"
+    },
+    {
+      "name": "Nanuku Resort",
+      "country": "Fiji",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/nannrlx-nanuku-resort/",
+      "points": 105000
+    },
+    {
+      "name": "Raiwasa Private Resort",
+      "country": "Fiji",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Auberge de Cassagne & Spa",
+      "country": "France"
+    },
+    {
+      "name": "Chateau de Maubreuil",
+      "country": "France"
+    },
+    {
+      "name": "Chateau des Fleurs",
+      "country": "France"
+    },
+    {
+      "name": "Chateau Eza",
+      "country": "France"
+    },
+    {
+      "name": "Chateau Hospitalet Wine Resort & Spa",
+      "country": "France"
+    },
+    {
+      "name": "Chateau Le Cagnard",
+      "country": "France"
+    },
+    {
+      "name": "Domaine de Manville",
+      "country": "France"
+    },
+    {
+      "name": "Grand Hotel du Palais Royal",
+      "country": "France",
+      "city": "Paris",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/parghlx-grand-hotel-du-palais-royal/",
+      "points": 120000
+    },
+    {
+      "name": "Grand Powers",
+      "country": "France",
+      "city": "Paris"
+    },
+    {
+      "name": "Hotel and SPA des Pecheurs",
+      "country": "France"
+    },
+    {
+      "name": "Hotel la Perouse",
+      "country": "France"
+    },
+    {
+      "name": "Hotel La Roya",
+      "country": "France"
+    },
+    {
+      "name": "Hotel le Cep and Spa",
+      "country": "France"
+    },
+    {
+      "name": "Hotel Le Pigonnet",
+      "country": "France",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/mrslplx-hotel-le-pigonnet"
+    },
+    {
+      "name": "Hotel Norman Paris",
+      "country": "France",
+      "city": "Paris"
+    },
+    {
+      "name": "Hotel Juana",
+      "country": "France"
+    },
+    {
+      "name": "Les Manoirs des Portes de Deauville",
+      "country": "France"
+    },
+    {
+      "name": "Le M de Megeve",
+      "country": "France"
+    },
+    {
+      "name": "Le Narcisse Blanc Hotel Spa",
+      "country": "France"
+    },
+    {
+      "name": "Le Nessay",
+      "country": "France"
+    },
+    {
+      "name": "Le Vallon de Valrugues & Spa",
+      "country": "France"
+    },
+    {
+      "name": "Les Bories & Spa",
+      "country": "France"
+    },
+    {
+      "name": "Marquis Faubourg Saint-Honoré",
+      "country": "France"
+    },
+    {
+      "name": "MUSE Saint-Tropez",
+      "country": "France"
+    },
+    {
+      "name": "Refuge de la Traye",
+      "country": "France"
+    },
+    {
+      "name": "Relais de Chambord",
+      "country": "France"
+    },
+    {
+      "name": "UP – Ultimate Provence Hôtel",
+      "country": "France"
+    },
+    {
+      "name": "YNDO Hotel",
+      "country": "France",
+      "city": "Bordeaux",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/bodyhlx-yndo-hotel/"
+    },
+    {
+      "name": "Breidenbacher Hof",
+      "country": "Germany"
+    },
+    {
+      "name": "House of Hutter - Munchner Kindl",
+      "country": "Germany"
+    },
+    {
+      "name": "Hubertus Mountain Refugio Allgau",
+      "country": "Germany"
+    },
+    {
+      "name": "Schlosshotel Kronberg",
+      "country": "Germany"
+    },
+    {
+      "name": "Wilmina Apartments & Lofts",
+      "country": "Germany"
+    },
+    {
+      "name": "100 Rizes Seaside Resort",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "A77 Suites",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Acro Suites",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Andronis Minois",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Archipelagos Hotel",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Aressana Spa Hotel and Suites",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Aristide Hotel",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Boheme Hotel",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Canaves Ena",
+      "country": "Greece",
+      "city": "Santorini",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Canaves Epitome",
+      "country": "Greece",
+      "city": "Santorini",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Canaves Oia Suites",
+      "country": "Greece",
+      "city": "Santorini",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/jtrsulx-canaves-oia-suites/",
+      "points": 190000
+    },
+    {
+      "name": "Casa del Mar Mykonos",
+      "country": "Greece",
+      "city": "Mykonos",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Casa Delfino Hotel & Spa",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "DeLight Boutique Hotel",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Eagles Palace",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Eagles Villas",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Elounda Gulf Villas",
+      "country": "Greece",
+      "city": "Crete",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Euphoria Retreat",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Gold Suites",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Laguna Coast Resort",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Lindos Blu",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Manili Boutique Suites & Villas",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Mykonos Ammos Hotel",
+      "country": "Greece",
+      "city": "Mykonos",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Mykonos Riviera Hotel",
+      "country": "Greece",
+      "city": "Mykonos",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Naxian Collection",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Nido, Mar-Bella Collection",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "ON Residence",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "On The Rocks",
+      "country": "Greece",
+      "city": "Santorini",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Panoptis Escape",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Phaea Blue",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Rimondi Boutique Hotel",
+      "country": "Greece",
+      "city": "Crete",
+      "tags": [
+        "sweet",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/herrblx-rimondi-boutique-hotel/",
+      "points": 38000
+    },
+    {
+      "name": "Rodos Park",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "San Antonio",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Santorini Secret Suites and Spa",
+      "country": "Greece",
+      "city": "Santorini",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "St. Nicolas Bay Resort Hotel & Villas",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Summer Senses Luxury Resort",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "The Excelsior Hotel",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "The Petra",
+      "country": "Greece",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Lanson Place Causeway Bay",
+      "country": "Hong Kong"
+    },
+    {
+      "name": "Bolontiku Boutique Hotel and Spa",
+      "country": "Guatemala"
+    },
+    {
+      "name": "Kozmo Hotel Suites & Spa",
+      "country": "Hungary"
+    },
+    {
+      "name": "Hotel Ranga",
+      "country": "Iceland",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Brij Lakshman Sagar",
+      "country": "India"
+    },
+    {
+      "name": "Narendra Bhawan Bikaner",
+      "country": "India",
+      "city": "Bikaner",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/jdhnblx-narendra-bhawan-bikaner/",
+      "points": 15000
+    },
+    {
+      "name": "Suryagarh Jaisalmer",
+      "country": "India"
+    },
+    {
+      "name": "The Raj Palace",
+      "country": "India"
+    },
+    {
+      "name": "Amaya",
+      "country": "India",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/ixcallx-amaya"
+    },
+    {
+      "name": "Desa Hay",
+      "country": "Indonesia",
+      "city": "Bali",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Gdas Bali Health and Wellness Resort",
+      "country": "Indonesia",
+      "city": "Bali",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/dpsgblx-gdas-bali-health-and-wellness-resort/",
+      "points": 60000
+    },
+    {
+      "name": "Hidden Hills Villas",
+      "country": "Indonesia",
+      "city": "Bali",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "La Reserve 1785",
+      "country": "Indonesia",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "REVIVO Wellness Resort",
+      "country": "Indonesia",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Viceroy Bali",
+      "country": "Indonesia",
+      "city": "Bali",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Villa Tokay",
+      "country": "Indonesia",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Ballymaloe House Hotel",
+      "country": "Ireland"
+    },
+    {
+      "name": "Cliff House Hotel",
+      "country": "Ireland"
+    },
+    {
+      "name": "Cahernane House Hotel",
+      "country": "Ireland"
+    },
+    {
+      "name": "Dylan Hotel, Dublin",
+      "country": "Ireland",
+      "city": "Dublin"
+    },
+    {
+      "name": "Glenlo Abbey Hotel & Estate",
+      "country": "Ireland"
+    },
+    {
+      "name": "Gregans Castle Hotel",
+      "country": "Ireland"
+    },
+    {
+      "name": "The Lansdowne Kenmare",
+      "country": "Ireland"
+    },
+    {
+      "name": "The Montenotte",
+      "country": "Ireland",
+      "city": "Cork"
+    },
+    {
+      "name": "The Wilder Townhouse",
+      "country": "Ireland"
+    },
+    {
+      "name": "The American Colony Hotel",
+      "country": "Israel"
+    },
+    {
+      "name": "Albergo Pietrasanta",
+      "country": "Italy"
+    },
+    {
+      "name": "Alpin Royal Wellness Refugium",
+      "country": "Italy"
+    },
+    {
+      "name": "Babuino 181",
+      "country": "Italy",
+      "city": "Rome"
+    },
+    {
+      "name": "Byblos Art Hotel Villa Amista",
+      "country": "Italy"
+    },
+    {
+      "name": "Ca' di Dio",
+      "country": "Italy",
+      "city": "Venice"
+    },
+    {
+      "name": "Ca' Sagredo Hotel",
+      "country": "Italy",
+      "city": "Venice"
+    },
+    {
+      "name": "Canne Bianche Lifestyle Hotel",
+      "country": "Italy"
+    },
+    {
+      "name": "Capitolo Riviera",
+      "country": "Italy"
+    },
+    {
+      "name": "Cascioni Eco Retreat",
+      "country": "Italy"
+    },
+    {
+      "name": "CPH Pevero Hotel",
+      "country": "Italy",
+      "city": "Sardinia",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Donna Carmela Resort & Lodges",
+      "country": "Italy"
+    },
+    {
+      "name": "Due Lune Puntaldia Resort & Golf",
+      "country": "Italy"
+    },
+    {
+      "name": "Eight Hotel Portofino",
+      "country": "Italy",
+      "city": "Portofino",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Escalus Luxury Suites",
+      "country": "Italy"
+    },
+    {
+      "name": "Furore Grand Hotel",
+      "country": "Italy",
+      "city": "Amalfi Coast",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Galleria Vik Milano",
+      "country": "Italy",
+      "city": "Milan"
+    },
+    {
+      "name": "Goldene Rose Karthaus",
+      "country": "Italy"
+    },
+    {
+      "name": "Grand Hotel Bristol Spa Resort",
+      "country": "Italy"
+    },
+    {
+      "name": "Grand Hotel Cocumella",
+      "country": "Italy",
+      "city": "Sorrento",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Grand Hotel Victoria Concept & Spa",
+      "country": "Italy",
+      "city": "Lake Como",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Hotel Ai Reali",
+      "country": "Italy",
+      "city": "Venice"
+    },
+    {
+      "name": "Hotel d'Inghilterra",
+      "country": "Italy",
+      "city": "Rome"
+    },
+    {
+      "name": "Hotel de la Ville - Monza",
+      "country": "Italy"
+    },
+    {
+      "name": "Hotel De Ricci",
+      "country": "Italy",
+      "city": "Rome"
+    },
+    {
+      "name": "Hotel Lungarno",
+      "country": "Italy",
+      "city": "Florence"
+    },
+    {
+      "name": "Hotel Regency",
+      "country": "Italy",
+      "city": "Florence"
+    },
+    {
+      "name": "Hotel Saltus",
+      "country": "Italy"
+    },
+    {
+      "name": "Il Melograno",
+      "country": "Italy"
+    },
+    {
+      "name": "La Medusa Dimora di Charme",
+      "country": "Italy"
+    },
+    {
+      "name": "La Roqqa",
+      "country": "Italy"
+    },
+    {
+      "name": "La Villa del Re",
+      "country": "Italy"
+    },
+    {
+      "name": "Le Calette N5",
+      "country": "Italy"
+    },
+    {
+      "name": "Le Marne Relais",
+      "country": "Italy"
+    },
+    {
+      "name": "Magna Pars L' Hotel a Parfum",
+      "country": "Italy"
+    },
+    {
+      "name": "Margutta 19",
+      "country": "Italy",
+      "city": "Rome"
+    },
+    {
+      "name": "Masseria Palombara Relais & Spa",
+      "country": "Italy",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/bdsmplx-masseria-palombara-relais-and-spa"
+    },
+    {
+      "name": "Miramonti Boutique Hotel",
+      "country": "Italy"
+    },
+    {
+      "name": "Naturalis Bio Resort & Spa",
+      "country": "Italy"
+    },
+    {
+      "name": "Oasyhotel",
+      "country": "Italy"
+    },
+    {
+      "name": "Palazzo Artemide",
+      "country": "Italy"
+    },
+    {
+      "name": "Palazzo Manfredi",
+      "country": "Italy",
+      "city": "Rome"
+    },
+    {
+      "name": "Palazzo Talia",
+      "country": "Italy"
+    },
+    {
+      "name": "Palazzo Vecchietti",
+      "country": "Italy",
+      "city": "Florence"
+    },
+    {
+      "name": "Palm Suite",
+      "country": "Italy"
+    },
+    {
+      "name": "Park Hotel ai Cappuccini",
+      "country": "Italy"
+    },
+    {
+      "name": "Praia Art Resort",
+      "country": "Italy"
+    },
+    {
+      "name": "Relais Roncolo 1888",
+      "country": "Italy"
+    },
+    {
+      "name": "ROMEO Napoli",
+      "country": "Italy",
+      "city": "Naples"
+    },
+    {
+      "name": "ROMEO Roma",
+      "country": "Italy",
+      "city": "Rome"
+    },
+    {
+      "name": "Sant'Angelo Matera",
+      "country": "Italy",
+      "city": "Matera",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/brisalx-santangelo-matera/",
+      "points": 85000
+    },
+    {
+      "name": "Sina Centurion Palace",
+      "country": "Italy",
+      "city": "Venice"
+    },
+    {
+      "name": "Sina Palazzo Sant Angelo",
+      "country": "Italy",
+      "city": "Venice"
+    },
+    {
+      "name": "Sina The Gray",
+      "country": "Italy",
+      "city": "Milan"
+    },
+    {
+      "name": "The Goethe Hotel",
+      "country": "Italy"
+    },
+    {
+      "name": "The James Suite Hotel Firenze 1564",
+      "country": "Italy",
+      "city": "Florence"
+    },
+    {
+      "name": "The Plein Hotel",
+      "country": "Italy"
+    },
+    {
+      "name": "Villa Athena Resort",
+      "country": "Italy"
+    },
+    {
+      "name": "Villa di Piazzano",
+      "country": "Italy"
+    },
+    {
+      "name": "Villa La Madonna",
+      "country": "Italy",
+      "city": "Piedmont",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/goavmlx-villa-la-madonna/",
+      "points": 95000
+    },
+    {
+      "name": "Villa Neri Resort & Spa",
+      "country": "Italy"
+    },
+    {
+      "name": "Villa Petriolo",
+      "country": "Italy"
+    },
+    {
+      "name": "Villa Soligo",
+      "country": "Italy",
+      "city": "Treviso",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/tsfvslx-villa-soligo/",
+      "points": 40000
+    },
+    {
+      "name": "Villa Spalletti Trivelli",
+      "country": "Italy",
+      "city": "Rome"
+    },
+    {
+      "name": "VISTA Verona",
+      "country": "Italy",
+      "city": "Verona"
+    },
+    {
+      "name": "VRetreats Cervino",
+      "country": "Italy"
+    },
+    {
+      "name": "Bluefields Bay Villas",
+      "country": "Jamaica"
+    },
+    {
+      "name": "S Hotel Montego Bay",
+      "country": "Jamaica"
+    },
+    {
+      "name": "S Hotel Kingston",
+      "country": "Jamaica"
+    },
+    {
+      "name": "The Trident Hotel",
+      "country": "Jamaica"
+    },
+    {
+      "name": "Cuvée J2 Hôtel Osaka by Onko Chishin",
+      "country": "Japan",
+      "city": "Osaka",
+      "tags": [
+        "new",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/itmcjlx-cuvee-j2-hotel-osaka-by-onko-chishin"
+    },
+    {
+      "name": "FAUCHON L'Hotel Kyoto",
+      "country": "Japan",
+      "city": "Kyoto",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Five Spring Resort The Shirahama",
+      "country": "Japan",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Hotel Chourakukan",
+      "country": "Japan",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Kawana Hotel & Golf Course",
+      "country": "Japan",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Nagoya Kanko Hotel ESPACIO",
+      "country": "Japan",
+      "city": "Nagoya",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Shima Kanko Hotel The Bay Suites",
+      "country": "Japan",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Sowaka",
+      "country": "Japan",
+      "city": "Kyoto",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/kixsklx-sowaka/",
+      "points": 130000
+    },
+    {
+      "name": "Takanawa Hanakohro",
+      "country": "Japan",
+      "city": "Tokyo",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "The Terrace Club Wellness Thalasso At Busena",
+      "country": "Japan",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "The Tokyo Station Hotel",
+      "country": "Japan",
+      "city": "Tokyo",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "The Tower Hotel Nagoya",
+      "country": "Japan",
+      "city": "Nagoya",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "The Atlantic Hotel",
+      "country": "Jersey"
+    },
+    {
+      "name": "Hemingways Nairobi",
+      "country": "Kenya",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "The Namkhan",
+      "country": "Laos"
+    },
+    {
+      "name": "Grand Palace Hotel Riga",
+      "country": "Latvia",
+      "city": "Riga",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/rixgplx-grand-palace-hotel/",
+      "points": 40000
+    },
+    {
+      "name": "O Monot Boutique Hotel",
+      "country": "Lebanon",
+      "city": "Beirut",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/beyomlx-o-monot-boutique-hotel/",
+      "points": 35000
+    },
+    {
+      "name": "NARUTIS Hotel",
+      "country": "Lithuania"
+    },
+    {
+      "name": "Bertam Wellness, Spa & Villas",
+      "country": "Malaysia"
+    },
+    {
+      "name": "Cameron Highlands Resort",
+      "country": "Malaysia",
+      "city": "Pahang",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/kulchlx-cameron-highlands-resort/",
+      "points": 35000
+    },
+    {
+      "name": "Eythrope Boutique Villa",
+      "country": "Malaysia"
+    },
+    {
+      "name": "Gaya Island Resort",
+      "country": "Malaysia",
+      "city": "Kota Kinabalu",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/bkigilx-gaya-island-resort/",
+      "points": 35000
+    },
+    {
+      "name": "Mangala Estate",
+      "country": "Malaysia"
+    },
+    {
+      "name": "Pangkor Laut Resort",
+      "country": "Malaysia"
+    },
+    {
+      "name": "Tanjong Jara Resort",
+      "country": "Malaysia",
+      "city": "Dungun",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/ktetjlx-tanjong-jara-resort/",
+      "points": 40000
+    },
+    {
+      "name": "The Danna Langkawi",
+      "country": "Malaysia"
+    },
+    {
+      "name": "The Edison George Town",
+      "country": "Malaysia"
+    },
+    {
+      "name": "The Majestic Malacca",
+      "country": "Malaysia",
+      "city": "Malacca",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/mkzmnlx-the-majestic-malacca/",
+      "points": 25000
+    },
+    {
+      "name": "Amilla Maldives",
+      "country": "Maldives",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Baros Maldives",
+      "country": "Maldives",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Huvafen Fushi Maldives",
+      "country": "Maldives",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Milaidhoo Maldives",
+      "country": "Maldives",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/mlemilx-milaidhoo-maldives/",
+      "points": 170000
+    },
+    {
+      "name": "Velassaru Maldives",
+      "country": "Maldives",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Casa Ellul",
+      "country": "Malta"
+    },
+    {
+      "name": "Heritage Le Telfair Golf Resort",
+      "country": "Mauritius",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Bespoke Tulum",
+      "country": "Mexico",
+      "city": "Tulum"
+    },
+    {
+      "name": "Brick Hotel",
+      "country": "Mexico",
+      "city": "Mexico City"
+    },
+    {
+      "name": "Decu Downtown",
+      "country": "Mexico"
+    },
+    {
+      "name": "Diez Diez Collection",
+      "country": "Mexico"
+    },
+    {
+      "name": "Hacienda Pena Pobre",
+      "country": "Mexico"
+    },
+    {
+      "name": "La Casa Que Canta",
+      "country": "Mexico",
+      "city": "Zihuatanejo"
+    },
+    {
+      "name": "La Valise Mazunte",
+      "country": "Mexico"
+    },
+    {
+      "name": "La Valise Mexico City",
+      "country": "Mexico",
+      "city": "Mexico City"
+    },
+    {
+      "name": "La Valise San Miguel de Allende",
+      "country": "Mexico",
+      "city": "San Miguel"
+    },
+    {
+      "name": "La Valise Tulum",
+      "country": "Mexico",
+      "city": "Tulum"
+    },
+    {
+      "name": "La Zebra",
+      "country": "Mexico",
+      "city": "Tulum"
+    },
+    {
+      "name": "Mezzanine",
+      "country": "Mexico"
+    },
+    {
+      "name": "Mi Amor",
+      "country": "Mexico",
+      "city": "Tulum"
+    },
+    {
+      "name": "Roso Guest House",
+      "country": "Mexico",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/mexrhlx-roso-guest-house/"
+    },
+    {
+      "name": "TAGO Tulum",
+      "country": "Mexico",
+      "city": "Tulum"
+    },
+    {
+      "name": "Todos Santos Boutique Hotel",
+      "country": "Mexico"
+    },
+    {
+      "name": "Villa Santa Cruz",
+      "country": "Mexico"
+    },
+    {
+      "name": "Wakax Hacienda – Cenote & Boutique Hotel",
+      "country": "Mexico",
+      "city": "Tulum",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/cunwhlx-wakax-hacienda-cenote-and-boutique-hotel",
+      "points": 70000
+    },
+    {
+      "name": "Hotel Sahrai",
+      "country": "Morocco",
+      "city": "Fez",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Ksar Char-Bagh",
+      "country": "Morocco",
+      "city": "Marrakech",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Nobu Hotel Marrakech",
+      "country": "Morocco",
+      "city": "Marrakech",
+      "tags": [
+        "tpg",
+        "nobu",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/raknmlx-nobu-hotel-marrakech/",
+      "points": 130000
+    },
+    {
+      "name": "Wa Ale Resort",
+      "country": "Myanmar"
+    },
+    {
+      "name": "Varnabas Museum Hotel",
+      "country": "Nepal"
+    },
+    {
+      "name": "Canal House",
+      "country": "Netherlands",
+      "city": "Amsterdam"
+    },
+    {
+      "name": "Pillows Grand Boutique Hotel Maurits at the Park",
+      "country": "Netherlands"
+    },
+    {
+      "name": "TwentySeven Hotel",
+      "country": "Netherlands",
+      "city": "Amsterdam"
+    },
+    {
+      "name": "Eichardt's Private Hotel",
+      "country": "New Zealand",
+      "city": "Queenstown",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "The George Christchurch",
+      "country": "New Zealand"
+    },
+    {
+      "name": "Calala Island",
+      "country": "Nicaragua",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/mgacalx-calala-island/",
+      "points": 200000
+    },
+    {
+      "name": "Morgan's Rock Reserve & Ecolodge",
+      "country": "Nicaragua",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Yemaya Reefs",
+      "country": "Nicaragua",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Eilert Smith Hotel",
+      "country": "Norway"
+    },
+    {
+      "name": "Opus XVI",
+      "country": "Norway"
+    },
+    {
+      "name": "American Trade Hotel",
+      "country": "Panama"
+    },
+    {
+      "name": "Nobu Hotel Warsaw",
+      "country": "Poland",
+      "city": "Warsaw",
+      "tags": [
+        "nobu"
+      ]
+    },
+    {
+      "name": "Carmo's Boutique Hotel",
+      "country": "Portugal"
+    },
+    {
+      "name": "Hospes Infante Sagres Porto",
+      "country": "Portugal",
+      "city": "Porto"
+    },
+    {
+      "name": "Hotel Casa Palmela",
+      "country": "Portugal"
+    },
+    {
+      "name": "MS Collection Aveiro – Palacete de Valdemouro",
+      "country": "Portugal"
+    },
+    {
+      "name": "Palacio do Governador",
+      "country": "Portugal",
+      "city": "Lisbon"
+    },
+    {
+      "name": "Palacio Estoril Hotel, Golf & Wellness",
+      "country": "Portugal"
+    },
+    {
+      "name": "Pousada de Lisboa",
+      "country": "Portugal",
+      "city": "Lisbon"
+    },
+    {
+      "name": "Pousada Palacio de Estoi",
+      "country": "Portugal"
+    },
+    {
+      "name": "Praia do Canal Nature Retreat",
+      "country": "Portugal"
+    },
+    {
+      "name": "Quinta Da Comporta",
+      "country": "Portugal"
+    },
+    {
+      "name": "Quinta das Lagrimas",
+      "country": "Portugal"
+    },
+    {
+      "name": "The Lumiares Hotel & Spa",
+      "country": "Portugal",
+      "city": "Lisbon"
+    },
+    {
+      "name": "The Rebello",
+      "country": "Portugal"
+    },
+    {
+      "name": "The Vintage Lisbon",
+      "country": "Portugal",
+      "city": "Lisbon"
+    },
+    {
+      "name": "Verride Palacio de Santa Catarina",
+      "country": "Portugal",
+      "city": "Lisbon"
+    },
+    {
+      "name": "Wine & Books Porto Hotel",
+      "country": "Portugal",
+      "city": "Porto"
+    },
+    {
+      "name": "Olive Boutique Hotel",
+      "country": "Puerto Rico"
+    },
+    {
+      "name": "Bethlen Estates Transylvania",
+      "country": "Romania"
+    },
+    {
+      "name": "Sunset Reef",
+      "country": "Saint Kitts and Nevis"
+    },
+    {
+      "name": "Bequia Beach Hotel",
+      "country": "Saint Vincent and Grenadines",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "The Liming Bequia",
+      "country": "Saint Vincent and Grenadines",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/bqutllx-the-liming-bequia/",
+      "points": 95000
+    },
+    {
+      "name": "Sundy Praia",
+      "country": "Sao Tome and Principe",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Al Mashreq Boutique Hotel",
+      "country": "Saudi Arabia",
+      "city": "Riyadh",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/ruhaalx-al-mashreq-boutique-hotel",
+      "points": 57000
+    },
+    {
+      "name": "Saint Ten Hotel",
+      "country": "Serbia"
+    },
+    {
+      "name": "L'Escale Resort Marina and Spa",
+      "country": "Seychelles",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "NIVA Labriz Seychelles",
+      "country": "Seychelles",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Vila Planinka",
+      "country": "Slovenia"
+    },
+    {
+      "name": "Le Quartier Francais",
+      "country": "South Africa"
+    },
+    {
+      "name": "The Cellars-Hohenort",
+      "country": "South Africa",
+      "city": "Cape Town"
+    },
+    {
+      "name": "The Marine",
+      "country": "South Africa"
+    },
+    {
+      "name": "The Plettenberg",
+      "country": "South Africa"
+    },
+    {
+      "name": "Hotel28 Myeongdong",
+      "country": "South Korea",
+      "city": "Seoul"
+    },
+    {
+      "name": "Aguas de Ibiza Grand Luxe Hotel",
+      "country": "Spain",
+      "city": "Ibiza"
+    },
+    {
+      "name": "Cap Rocat",
+      "country": "Spain",
+      "city": "Mallorca",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/pmicrlx-cap-rocat/",
+      "points": 190000
+    },
+    {
+      "name": "Can Ferrereta",
+      "country": "Spain",
+      "city": "Mallorca"
+    },
+    {
+      "name": "Claris Hotel and Spa",
+      "country": "Spain",
+      "city": "Barcelona"
+    },
+    {
+      "name": "CoolRooms Palacio de Luces",
+      "country": "Spain"
+    },
+    {
+      "name": "CoolRooms Palacio de Villapanes",
+      "country": "Spain",
+      "city": "Seville"
+    },
+    {
+      "name": "Dunas de Formentera",
+      "country": "Spain"
+    },
+    {
+      "name": "El Lodge Ski and Spa",
+      "country": "Spain"
+    },
+    {
+      "name": "Gecko Formentera",
+      "country": "Spain"
+    },
+    {
+      "name": "Gran Derby Suite",
+      "country": "Spain",
+      "city": "Barcelona",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/bcngdlx-gran-derby-suite/",
+      "points": 39000
+    },
+    {
+      "name": "Grand Hotel Central",
+      "country": "Spain",
+      "city": "Barcelona"
+    },
+    {
+      "name": "Hacienda Zorita Wine Hotel & SPA",
+      "country": "Spain"
+    },
+    {
+      "name": "Hotel Arima & Spa",
+      "country": "Spain"
+    },
+    {
+      "name": "Hotel Bagues",
+      "country": "Spain",
+      "city": "Barcelona"
+    },
+    {
+      "name": "Hotel Palau Fugit",
+      "country": "Spain"
+    },
+    {
+      "name": "Hotel Urban Madrid",
+      "country": "Spain",
+      "city": "Madrid"
+    },
+    {
+      "name": "La Torre del Canonigo",
+      "country": "Spain",
+      "city": "Ibiza"
+    },
+    {
+      "name": "Maribel",
+      "country": "Spain"
+    },
+    {
+      "name": "Nobu Hotel Ibiza Bay",
+      "country": "Spain",
+      "city": "Ibiza",
+      "tags": [
+        "nobu",
+        "iconic"
+      ]
+    },
+    {
+      "name": "Nobu Hotel Marbella",
+      "country": "Spain",
+      "city": "Marbella",
+      "tags": [
+        "nobu",
+        "iconic"
+      ]
+    },
+    {
+      "name": "Palacio Solecio",
+      "country": "Spain"
+    },
+    {
+      "name": "Teranka Formentera",
+      "country": "Spain"
+    },
+    {
+      "name": "Torralbenc",
+      "country": "Spain"
+    },
+    {
+      "name": "Torre del Marques Hotel Spa & Winery",
+      "country": "Spain"
+    },
+    {
+      "name": "Urso Hotel and Spa",
+      "country": "Spain",
+      "city": "Madrid"
+    },
+    {
+      "name": "WITTMORE HOTEL",
+      "country": "Spain",
+      "city": "Barcelona"
+    },
+    {
+      "name": "Angel Beach Resort",
+      "country": "Sri Lanka",
+      "city": "Galle",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/cmbablx-angel-beach-resort/",
+      "points": 40000
+    },
+    {
+      "name": "Tabula Rasa Resort & Spa",
+      "country": "Sri Lanka",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Taru Villas Levita - Kandy",
+      "country": "Sri Lanka",
+      "city": "Kandy",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Taru Villas Maia",
+      "country": "Sri Lanka",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Taru Villas The Long House",
+      "country": "Sri Lanka",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Taru Villas Villu - Wilpattu",
+      "country": "Sri Lanka",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "The Fortress Resort and Spa",
+      "country": "Sri Lanka",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Arctic Bath",
+      "country": "Sweden",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Bank Hotel",
+      "country": "Sweden",
+      "city": "Stockholm"
+    },
+    {
+      "name": "Dorsia Hotel & Restaurant",
+      "country": "Sweden"
+    },
+    {
+      "name": "Lydmar Hotel",
+      "country": "Sweden",
+      "city": "Stockholm"
+    },
+    {
+      "name": "Ambassador Zurich Hotel",
+      "country": "Switzerland",
+      "city": "Zurich"
+    },
+    {
+      "name": "BERGWELT GRINDELWALD ALPINE DESIGN RESORT",
+      "country": "Switzerland"
+    },
+    {
+      "name": "Chateau d'Ouchy",
+      "country": "Switzerland"
+    },
+    {
+      "name": "Crans Ambassador",
+      "country": "Switzerland"
+    },
+    {
+      "name": "Eastwest Hotel",
+      "country": "Switzerland"
+    },
+    {
+      "name": "Grace La Margna St Moritz",
+      "country": "Switzerland",
+      "city": "St Moritz"
+    },
+    {
+      "name": "Grand Hotel Villa Castagnola",
+      "country": "Switzerland"
+    },
+    {
+      "name": "Hotel Les Armures",
+      "country": "Switzerland"
+    },
+    {
+      "name": "Le Grand Bellevue",
+      "country": "Switzerland"
+    },
+    {
+      "name": "The Quion",
+      "country": "Switzerland"
+    },
+    {
+      "name": "The VIEW Lugano",
+      "country": "Switzerland"
+    },
+    {
+      "name": "Valsana Hotel Arosa",
+      "country": "Switzerland",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/zrhvhlx-valsana-hotel-arosa/"
+    },
+    {
+      "name": "Wellnesshotel Golf Panorama",
+      "country": "Switzerland"
+    },
+    {
+      "name": "Grand Victoria Hotel",
+      "country": "Taiwan"
+    },
+    {
+      "name": "Hotel Beore Sun Moon Lake",
+      "country": "Taiwan"
+    },
+    {
+      "name": "The Old England Manor",
+      "country": "Taiwan"
+    },
+    {
+      "name": "AMANOR Hotel Chiang Mai",
+      "country": "Thailand",
+      "city": "Chiang Mai"
+    },
+    {
+      "name": "Cape Fahn Hotel",
+      "country": "Thailand",
+      "city": "Koh Samui"
+    },
+    {
+      "name": "Cape Kudu Hotel",
+      "country": "Thailand"
+    },
+    {
+      "name": "Keemala",
+      "country": "Thailand",
+      "city": "Phuket",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "La Miniera Pool Villas Pattaya",
+      "country": "Thailand",
+      "city": "Pattaya",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/bkkmplx-la-miniera-pool-villas-pattaya/",
+      "points": 40000
+    },
+    {
+      "name": "Marasca Samui",
+      "country": "Thailand",
+      "city": "Koh Samui"
+    },
+    {
+      "name": "MUU BANGKOK HOTEL",
+      "country": "Thailand",
+      "city": "Bangkok",
+      "tags": [
+        "sweet"
+      ],
+      "url": "https://www.hilton.com/en/hotels/bkkatlx-muu-bangkok-hotel/",
+      "points": 40000
+    },
+    {
+      "name": "The Sukhothai Bangkok",
+      "country": "Thailand",
+      "city": "Bangkok"
+    },
+    {
+      "name": "Twinpalms MontAzure",
+      "country": "Thailand"
+    },
+    {
+      "name": "Twinpalms Phuket",
+      "country": "Thailand",
+      "city": "Phuket"
+    },
+    {
+      "name": "Twinpalms Tented Camp Phuket",
+      "country": "Thailand",
+      "city": "Phuket",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/hkttclx-twinpalms-tented-camp-phuket"
+    },
+    {
+      "name": "VALA Hua Hin",
+      "country": "Thailand"
+    },
+    {
+      "name": "Maison Dedine",
+      "country": "Tunisia"
+    },
+    {
+      "name": "Ariana Sustainable Luxury Lodge",
+      "country": "Turkiye"
+    },
+    {
+      "name": "Tomtom Suites",
+      "country": "Turkiye",
+      "city": "Istanbul"
+    },
+    {
+      "name": "Point Grace Resort and Spa",
+      "country": "Turks and Caicos",
+      "tags": [
+        "iconic"
+      ]
+    },
+    {
+      "name": "Sailrock South Caicos",
+      "country": "Turks and Caicos",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/xscsrlx-sailrock-south-caicos/",
+      "points": 140000
+    },
+    {
+      "name": "South Bank",
+      "country": "Turks and Caicos",
+      "tags": [
+        "iconic"
+      ],
+      "points": 180000
+    },
+    {
+      "name": "Alexander House and Utopia Spa",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Ashdown Park Hotel",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Bishopstrow Hotel & Spa",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Calcot & Spa",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Crossbasket Castle",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Culloden Estate & Spa",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Dormy House Hotel",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Dunluce Lodge",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Flemings Mayfair",
+      "country": "United Kingdom",
+      "city": "London"
+    },
+    {
+      "name": "Great Fosters",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Greywalls Hotel",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Grove of Narberth",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Homewood",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Inverlochy Castle",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Isle of Eriska Hotel, Spa and Island",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Linthwaite House",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Monkey Island Estate",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Nira Caledonia",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Rothay Manor",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Seaton House",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "The Academy",
+      "country": "United Kingdom",
+      "city": "London"
+    },
+    {
+      "name": "The Capital Hotel, Apartments & Townhouse",
+      "country": "United Kingdom",
+      "city": "London",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/lonctlx-the-capital-hotel-apartments-and-townhouse/"
+    },
+    {
+      "name": "The Feathers Hotel",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "The Fish Hotel",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "The Franklin",
+      "country": "United Kingdom",
+      "city": "London"
+    },
+    {
+      "name": "The Gainsborough Bath Spa",
+      "country": "United Kingdom",
+      "city": "Bath"
+    },
+    {
+      "name": "The Grand Hotel",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "The Prince Akatoki London",
+      "country": "United Kingdom",
+      "city": "London",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/lonpalx-the-prince-akatoki-london/"
+    },
+    {
+      "name": "The Retreat at Elcot Park",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "The Roseate Edinburgh",
+      "country": "United Kingdom",
+      "city": "Edinburgh"
+    },
+    {
+      "name": "The Mitre Hampton Court",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Tylney Hall Hotel and Gardens",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "Vintry & Mercer",
+      "country": "United Kingdom",
+      "city": "London"
+    },
+    {
+      "name": "Appellation Healdsburg",
+      "country": "USA",
+      "city": "Healdsburg, CA"
+    },
+    {
+      "name": "Camden Harbour Inn",
+      "country": "USA",
+      "city": "Camden, ME"
+    },
+    {
+      "name": "Carneros Resort and Spa",
+      "country": "USA",
+      "city": "Napa, CA"
+    },
+    {
+      "name": "Casia Lodge & Ranch",
+      "country": "USA"
+    },
+    {
+      "name": "Cougar Ridge Lodge",
+      "country": "USA"
+    },
+    {
+      "name": "Ella's Cottages",
+      "country": "USA"
+    },
+    {
+      "name": "Historic Rocky Waters Inn",
+      "country": "USA"
+    },
+    {
+      "name": "HGU New York",
+      "country": "USA",
+      "city": "New York"
+    },
+    {
+      "name": "Hotel Lucia",
+      "country": "USA",
+      "city": "Portland, OR",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/pdxhllx-hotel-lucia/"
+    },
+    {
+      "name": "Hotel on Rivington",
+      "country": "USA",
+      "city": "New York"
+    },
+    {
+      "name": "L'Auberge de Sedona",
+      "country": "USA",
+      "city": "Sedona, AZ",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/flgaslx-lauberge-de-sedona/",
+      "points": 140000
+    },
+    {
+      "name": "Lennox Miami Beach",
+      "country": "USA",
+      "city": "Miami Beach"
+    },
+    {
+      "name": "Lighthouse Hotel",
+      "country": "USA"
+    },
+    {
+      "name": "Longfellow Hotel",
+      "country": "USA",
+      "city": "Portland, ME",
+      "tags": [
+        "tpg"
+      ],
+      "url": "https://www.hilton.com/en/hotels/pwmtllx-longfellow-hotel/",
+      "points": 53000
+    },
+    {
+      "name": "Maison Twenty Seven",
+      "country": "USA"
+    },
+    {
+      "name": "Mirror Lake Inn",
+      "country": "USA"
+    },
+    {
+      "name": "Rawah Ranch",
+      "country": "USA",
+      "city": "Glendevey, CO",
+      "tags": [
+        "tpg",
+        "iconic"
+      ],
+      "url": "https://www.hilton.com/en/hotels/denrrlx-rawah-ranch/",
+      "points": 130000
+    },
+    {
+      "name": "Ridley House",
+      "country": "USA"
+    },
+    {
+      "name": "RiverView Ranch",
+      "country": "USA"
+    },
+    {
+      "name": "Rusty Parrot Lodge & Spa",
+      "country": "USA",
+      "city": "Jackson, WY"
+    },
+    {
+      "name": "Seal Cove Inn",
+      "country": "USA"
+    },
+    {
+      "name": "Sentinel",
+      "country": "USA"
+    },
+    {
+      "name": "Sitzmark Vail",
+      "country": "USA",
+      "city": "Vail, CO"
+    },
+    {
+      "name": "Snowpine Lodge",
+      "country": "USA",
+      "city": "Alta, UT"
+    },
+    {
+      "name": "Stein Eriksen Residences",
+      "country": "USA",
+      "city": "Park City, UT"
+    },
+    {
+      "name": "The Grady",
+      "country": "USA"
+    },
+    {
+      "name": "The Grayson Miami",
+      "country": "USA",
+      "city": "Miami"
+    },
+    {
+      "name": "The Inn at Rancho Santa Fe",
+      "country": "USA",
+      "city": "Rancho Santa Fe, CA"
+    },
+    {
+      "name": "The Lodge at St. Edward Park",
+      "country": "USA"
+    },
+    {
+      "name": "The Mansion at Ocean Edge",
+      "country": "USA",
+      "city": "Brewster, MA",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/bostmlx-the-mansion-at-ocean-edge/",
+      "points": 100000
+    },
+    {
+      "name": "The Pillars Hotel & Club",
+      "country": "USA"
+    },
+    {
+      "name": "The Roundtree Amagansett",
+      "country": "USA",
+      "city": "Amagansett, NY"
+    },
+    {
+      "name": "The Stavrand Russian River Valley",
+      "country": "USA"
+    },
+    {
+      "name": "Topping Rose House",
+      "country": "USA",
+      "city": "Bridgehampton, NY"
+    },
+    {
+      "name": "Wentworth Mansion",
+      "country": "USA",
+      "city": "Charleston, SC"
+    },
+    {
+      "name": "WestHouse Hotel New York",
+      "country": "USA",
+      "city": "New York"
+    },
+    {
+      "name": "Winslow's Bungalows",
+      "country": "USA"
+    },
+    {
+      "name": "Wylder Hotel Windham",
+      "country": "USA"
+    },
+    {
+      "name": "Zelda Dearest",
+      "country": "USA",
+      "city": "Asheville, NC",
+      "tags": [
+        "new"
+      ],
+      "url": "https://www.hilton.com/en/hotels/avlzdlx-zelda-dearest"
+    },
+    {
+      "name": "Jiva Hoa Lu Retreat",
+      "country": "Vietnam"
+    },
+    {
+      "name": "Namia River Retreat",
+      "country": "Vietnam"
+    },
+    {
+      "name": "The Anam Mui Ne",
+      "country": "Vietnam"
+    }
+  ]
+}
