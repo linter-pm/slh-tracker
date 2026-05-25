@@ -1,0 +1,48 @@
+name: Refresh SLH hotels data
+
+# Runs monthly to re-scrape hilton.com/participating-hotels and update hotels.json.
+# Vercel auto-deploys on push to main, so this is fully hands-off.
+
+on:
+  schedule:
+    # 1st of every month at 13:00 UTC (≈ 6:00 AM Pacific / 9:00 AM Eastern)
+    - cron: '0 13 1 * *'
+  workflow_dispatch:   # also allow manual triggering from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright browser
+        run: npx playwright install chromium --with-deps
+
+      - name: Run refresh script
+        run: node scripts/refresh.js
+
+      - name: Commit and push if changed
+        run: |
+          if [[ -n "$(git status --porcelain hotels.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add hotels.json
+            git commit -m "Auto refresh — $(date -u +'%B %Y')"
+            git push
+            echo "::notice::hotels.json updated and pushed"
+          else
+            echo "::notice::No changes detected this month"
+          fi

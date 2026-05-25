@@ -120,6 +120,41 @@
   .refresh-hint { background: var(--sage-soft); border: 1px solid #D2DDC9; padding: 12px 16px; border-radius: var(--radius); margin-top: 22px; font-size: 13px; color: #3F5A37; }
   .refresh-hint b { font-weight: 600; }
 
+  /* ── MODAL ───────────────────────────────────────────── */
+  .card { cursor: pointer; }
+  .card .iconbtn, .card .booklink { cursor: pointer; }
+
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(31,41,55,0.55); backdrop-filter: blur(4px); z-index: 100; display: none; align-items: center; justify-content: center; padding: 20px; }
+  .modal-backdrop.show { display: flex; animation: fade 0.18s ease; }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes slideIn { from { transform: translateY(12px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  .modal { background: var(--panel); border-radius: 16px; max-width: 560px; width: 100%; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(31,41,55,0.25); animation: slideIn 0.22s ease; position: relative; }
+  .modal-close { position: absolute; top: 14px; right: 14px; width: 32px; height: 32px; border: 0; background: var(--bg); border-radius: 50%; cursor: pointer; color: var(--ink-soft); font-size: 18px; display: inline-flex; align-items: center; justify-content: center; z-index: 1; transition: background .15s; }
+  .modal-close:hover { background: var(--line); color: var(--ink); }
+  .modal-body { padding: 28px 28px 22px; }
+  .modal .m-flag { font-size: 22px; margin-bottom: 4px; display: block; }
+  .modal .m-name { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 26px; line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 6px; color: var(--ink); padding-right: 30px; }
+  .modal .m-loc { font-size: 14px; color: var(--ink-muted); margin-bottom: 14px; }
+  .modal .m-badges { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 18px; }
+  .modal .m-section { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line-soft); }
+  .modal .m-section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-muted); margin-bottom: 8px; font-weight: 600; }
+  .modal .m-notes { font-size: 14.5px; line-height: 1.6; color: var(--ink-soft); margin: 0; }
+  .modal .m-meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
+  .modal .m-meta-item { background: var(--bg); padding: 10px 12px; border-radius: var(--radius-sm); border: 1px solid var(--line-soft); }
+  .modal .m-meta-label { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-muted); margin-bottom: 3px; }
+  .modal .m-meta-value { font-family: 'Fraunces', Georgia, serif; font-size: 18px; color: var(--ink); font-weight: 500; }
+  .modal .m-cta { display: flex; gap: 8px; margin-top: 22px; flex-wrap: wrap; }
+  .modal .m-btn { flex: 1; min-width: 160px; padding: 11px 14px; border-radius: 10px; border: 0; cursor: pointer; font: inherit; font-size: 14px; font-weight: 500; text-align: center; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px; transition: opacity .15s, transform .1s; }
+  .modal .m-btn:hover { opacity: 0.9; }
+  .modal .m-btn:active { transform: scale(0.98); }
+  .modal .m-btn-primary { background: var(--accent); color: white; }
+  .modal .m-btn-secondary { background: var(--bg); color: var(--ink); border: 1px solid var(--line); }
+  .modal .m-actions-row { display: flex; gap: 6px; }
+  .modal .m-iconbtn { padding: 8px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink-soft); cursor: pointer; font: inherit; font-size: 12.5px; display: inline-flex; align-items: center; gap: 5px; }
+  .modal .m-iconbtn:hover { color: var(--ink); border-color: var(--ink-muted); }
+  .modal .m-iconbtn.on { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+  .modal .m-iconbtn.on-eye { color: var(--ink); border-color: var(--ink); }
+
   @media (max-width: 760px) {
     .wrap { padding: 20px 16px 40px; }
     .hero { flex-direction: column; align-items: flex-start; }
@@ -129,6 +164,8 @@
     .stat .value { font-size: 22px; }
     .controls { grid-template-columns: 1fr; }
     .grid { grid-template-columns: 1fr; }
+    .modal-body { padding: 22px 20px 18px; }
+    .modal .m-name { font-size: 22px; }
   }
 </style>
 </head>
@@ -200,6 +237,14 @@
 
   <div class="refresh-hint">
     <b>Keeping this fresh.</b> SLH properties join and leave the Hilton program monthly without much fanfare. A scheduled task re-scrapes <code style="background:rgba(63,90,55,.1);padding:1px 5px;border-radius:3px;font-size:12px">hilton.com/participating-hotels</code> on the 1st of each month and updates the data behind this page. Favorites are stored per-device.
+  </div>
+
+  <!-- DETAIL MODAL -->
+  <div id="modal-backdrop" class="modal-backdrop" onclick="if(event.target===this)closeModal()">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="m-name-id">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
   </div>
 
   <footer class="footer">
@@ -434,15 +479,102 @@ $("reset").addEventListener("click", () => {
   render();
 });
 
-// event delegation for card buttons (works with re-rendered cards)
+// event delegation for card clicks — open modal unless an interactive child was clicked
 $("grid").addEventListener("click", e => {
-  const btn = e.target.closest(".iconbtn"); if (!btn) return;
-  e.preventDefault();
-  const card = btn.closest(".card");
-  const h = HOTELS_BY_KEY[card.dataset.k];
-  if (!h) return;
-  if (btn.dataset.action === "fav") toggleFav(h);
-  else if (btn.dataset.action === "seen") toggleSeen(h);
+  const card = e.target.closest(".card"); if (!card) return;
+  const h = HOTELS_BY_KEY[card.dataset.k]; if (!h) return;
+  // If user clicked a button or link inside the card, handle that instead
+  const btn = e.target.closest(".iconbtn");
+  if (btn) {
+    e.preventDefault();
+    if (btn.dataset.action === "fav") toggleFav(h);
+    else if (btn.dataset.action === "seen") toggleSeen(h);
+    return;
+  }
+  if (e.target.closest("a")) return;   // let the booking link work normally
+  // Otherwise: open the detail modal
+  openModal(h);
+});
+
+// ─── MODAL ────────────────────────────────────────────────
+function openModal(h) {
+  const meta = DATA.country_meta[h.country] || { f: "📍" };
+  const tags = h.tags || [];
+  const locText = h.city ? `${h.city}, ${h.country}` : h.country;
+
+  const badges = [];
+  if (tags.includes("tpg"))     badges.push('<span class="badge tpg">⭐ TPG Top Pick</span>');
+  if (tags.includes("sweet"))   badges.push('<span class="badge sweet">🎯 Points sweet spot (≤40K)</span>');
+  if (tags.includes("nobu"))    badges.push('<span class="badge nobu">Nobu Hotels</span>');
+  if (tags.includes("new"))     badges.push('<span class="badge new">Recently added</span>');
+  if (tags.includes("iconic") && !tags.includes("tpg")) badges.push('<span class="badge iconic">🌅 Iconic destination</span>');
+
+  // "Why we like it" — use curated note if present, otherwise auto-generate from tags
+  let notesHtml = "";
+  if (h.notes) {
+    notesHtml = `<div class="m-section"><div class="m-section-label">Why we like it</div><p class="m-notes">${escapeHtml(h.notes)}</p></div>`;
+  } else if (tags.length) {
+    const reasons = [];
+    if (tags.includes("tpg")) reasons.push("curated by The Points Guy as one of the most aspirational SLH properties bookable with Hilton Honors");
+    if (tags.includes("sweet")) reasons.push("on Frequent Miler's list of SLH properties under 40,000 points per night — strong points value");
+    if (tags.includes("nobu")) reasons.push("part of the Nobu Hotels collection — design-forward, name-brand luxury");
+    if (tags.includes("iconic")) reasons.push("located in a destination known for SLH excellence");
+    if (tags.includes("new")) reasons.push("recently added to the Hilton Honors program");
+    if (reasons.length) {
+      notesHtml = `<div class="m-section"><div class="m-section-label">Why it's notable</div><p class="m-notes">${escapeHtml(reasons.join("; "))}.</p></div>`;
+    }
+  }
+
+  // Stats row (points + region)
+  let metaGrid = "";
+  if (h.points || meta.r) {
+    const cells = [];
+    if (h.points) cells.push(`<div class="m-meta-item"><div class="m-meta-label">Starting points</div><div class="m-meta-value">${(h.points/1000).toFixed(0)}K / night</div></div>`);
+    cells.push(`<div class="m-meta-item"><div class="m-meta-label">Region</div><div class="m-meta-value">${escapeHtml(meta.r || "—")}</div></div>`);
+    metaGrid = `<div class="m-meta-grid">${cells.join("")}</div>`;
+  }
+
+  const fav = isFav(h), seen = isSeen(h);
+  const hasUrl = !!h.url;
+
+  $("modal-body").innerHTML = `
+    <span class="m-flag">${meta.f}</span>
+    <h2 class="m-name" id="m-name-id">${escapeHtml(h.name)}</h2>
+    <div class="m-loc">${escapeHtml(locText)}</div>
+    ${badges.length ? `<div class="m-badges">${badges.join("")}</div>` : ""}
+    ${metaGrid}
+    ${notesHtml}
+    <div class="m-cta">
+      <a class="m-btn m-btn-primary" href="${bookUrl(h)}" target="_blank" rel="noopener">${hasUrl ? "Check points availability →" : "Browse on Hilton →"}</a>
+      ${hasUrl ? `<a class="m-btn m-btn-secondary" href="${h.url}" target="_blank" rel="noopener">Hotel page</a>` : ""}
+    </div>
+    <div class="m-actions-row" style="margin-top:14px">
+      <button class="m-iconbtn ${fav?'on':''}" data-action="fav-modal">${fav ? "♥ Favorited" : "♡ Add to favorites"}</button>
+      <button class="m-iconbtn ${seen?'on-eye':''}" data-action="seen-modal">${seen ? "✓ Reviewed" : "Mark reviewed"}</button>
+    </div>
+  `;
+
+  // wire up the modal-internal favorite/seen buttons
+  $("modal-body").querySelectorAll("[data-action]").forEach(b => {
+    b.addEventListener("click", () => {
+      if (b.dataset.action === "fav-modal") { toggleFav(h); openModal(h); }
+      else if (b.dataset.action === "seen-modal") { toggleSeen(h); openModal(h); }
+    });
+  });
+
+  $("modal-backdrop").classList.add("show");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  $("modal-backdrop").classList.remove("show");
+  document.body.style.overflow = "";
+}
+window.closeModal = closeModal;
+
+// Esc closes modal
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && $("modal-backdrop").classList.contains("show")) closeModal();
 });
 
 // ─── BOOT ─────────────────────────────────────────────────
