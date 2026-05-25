@@ -277,8 +277,34 @@ function sortHotels(list) {
   return copy;
 }
 
+// Deep-link to the Hilton booking flow with points filter on.
+// If we have the hotel-specific URL, extract the 7-char ctyhocn code (first
+// segment before the dash, e.g. `anuhblx` from `anuhblx-hermitage-bay`) and
+// build the points-availability URL with default dates 30 days out so the
+// landing page lands on actual rate display. Users can change dates with
+// Hilton's flex calendar / "Shop by price" picker from there.
 function bookUrl(h) {
-  if (h.url) return h.url;
+  if (h.url) {
+    const m = h.url.match(/\/hotels\/([a-z0-9]{7})-/i);
+    if (m) {
+      const ctyhocn = m[1].toLowerCase();
+      const today = new Date();
+      const arrival = new Date(today.getTime() + 30 * 86400000);
+      const departure = new Date(today.getTime() + 31 * 86400000);
+      const fmt = (d) => d.toISOString().split("T")[0];
+      const params = new URLSearchParams({
+        ctyhocn,
+        arrivalDate: fmt(arrival),
+        departureDate: fmt(departure),
+        numRooms: "1",
+        numAdults: "2",
+        redeemPts: "true"
+      });
+      return `https://www.hilton.com/en/book/reservation/rooms/?${params.toString()}`;
+    }
+    return h.url;
+  }
+  // No hotel-specific URL — fall back to the country browse page.
   const slug = (h.country === "USA") ? "usa"
     : h.country.toLowerCase().replace(/'/g,"").replace(/&/g,"and").replace(/\s+/g,"-");
   return `https://www.hilton.com/en/locations/${slug}/small-luxury-hotels-slh/`;
@@ -320,7 +346,7 @@ function cardHtml(h) {
     ${badges.length ? `<div class="badges">${badges.join("")}</div>` : ""}
     <div class="meta-row">
       <span class="points">${pts}</span>
-      <a class="booklink" href="${bookUrl(h)}" target="_blank" rel="noopener">View on Hilton →</a>
+      <a class="booklink" href="${bookUrl(h)}" target="_blank" rel="noopener">${h.url ? 'Check points availability →' : 'View on Hilton →'}</a>
     </div>
   </article>`;
 }
